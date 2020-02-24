@@ -1,0 +1,12 @@
+div {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../../assets//images/sol2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
