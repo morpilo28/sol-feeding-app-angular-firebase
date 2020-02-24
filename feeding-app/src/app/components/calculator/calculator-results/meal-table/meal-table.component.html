@@ -4,14 +4,14 @@
             <tr>
                 <th></th>
                 <th>Grams</th>
-                <th>{{formData.meals}} meals (kg)</th>
+                <th>{{formData.meals}} Meals (kg)</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor='let key of keys'>
-                <td>{{key}}</td>
+                <td>{{key | titlecase}}</td>
                 <td>{{meal[key]}}</td>
-                <td>{{meal[key] * formData.meals / 1000}}</td>
+                <td>{{meal[key] * formData.meals / 1000 | number}}</td>
             </tr>
         </tbody>
     </table>

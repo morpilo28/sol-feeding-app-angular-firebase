@@ -14,6 +14,7 @@ export class MealTableComponent implements OnInit {
   public formData: MealCalculatorFormModel;
   public meal: MealModel;
   public keys;
+  public sum: number;
   constructor(private mealService: MealService, private formDataService: FormDataService) { }
 
   ngOnInit() {
@@ -25,5 +26,9 @@ export class MealTableComponent implements OnInit {
         this.keys = Object.keys(this.meal);
       })
     });
+  }
+
+  a(key, numOfMeals) {
+    this.sum = key * numOfMeals / 1000;
   }
 }
