@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { MealCalculatorFormModel } from 'src/app/models/meal-calculator-form-model';
 import { FormDataService } from 'src/app/services/form-data.service';
 import { MealModel } from 'src/app/models/meal-model';
